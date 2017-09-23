@@ -85,7 +85,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var card_20: UIView!
     
     var arrayOfImageViews:     [UIImageView]!
-    var arrayOfAnimalsNames  = ["panda.png","panda.png","penguin.png","penguin.png"]
+    var arrayOfAnimalsNames  = ["castor.png","castor.png","cavalo.png","cavalo.png","cobra.png","cobra.png","coruja.png","coruja.png","elefante.png","elefante.png","leao.png","leao.png",
+                                "pato.png","pato.png","sapo.png","sapo.png","panda.png","panda.png","penguin.png","penguin.png"]
     var arrayOfRandomAnimals = [String]()
     var arrayOfChosenCards   = [String]()
     var arrayOfChosenViews   = [UIView]()
@@ -96,13 +97,18 @@ class ViewController: UIViewController {
     //-------------------
     override func viewDidLoad() {
         super.viewDidLoad()
-        arrayOfCards = [card_1, card_2, card_3, card_4]
-        arrayOfImageViews = [ImageView_1, ImageView_2, ImageView_3, ImageView_4]
+        arrayOfCards = [card_1, card_2, card_3, card_4, card_5, card_6, card_7, card_8, card_9, card_10, card_11, card_12, card_13, card_14, card_15, card_16, card_17, card_18, card_19, card_20]
+        arrayOfImageViews = [ImageView_1, ImageView_2, ImageView_3, ImageView_4, ImageView_5, ImageView_6, ImageView_7, ImageView_8, ImageView_9, ImageView_10, ImageView_11, ImageView_12,
+                             ImageView_13, ImageView_14, ImageView_15, ImageView_16, ImageView_17, ImageView_18, ImageView_19, ImageView_20]
         randomAnimalNames ()
         setImageToCard ()
     }
     //-------------------
     @IBAction func showCard(_ sender: UIButton) {
+        
+        if arrayOfHidingFronts.count == 2 {
+            return
+        }
         
         switch sender.tag {
             case 0:
@@ -113,6 +119,38 @@ class ViewController: UIViewController {
                 cardClicked(front: front_3, back: back_3, indexChosenCards: sender.tag, cardView: card_3)
             case 3:
                 cardClicked(front: front_4, back: back_4, indexChosenCards: sender.tag, cardView: card_4)
+            case 4:
+                cardClicked(front: front_5, back: back_5, indexChosenCards: sender.tag, cardView: card_5)
+            case 5:
+                cardClicked(front: front_6, back: back_6, indexChosenCards: sender.tag, cardView: card_6)
+            case 6:
+                cardClicked(front: front_7, back: back_7, indexChosenCards: sender.tag, cardView: card_7)
+            case 7:
+                cardClicked(front: front_8, back: back_8, indexChosenCards: sender.tag, cardView: card_8)
+            case 8:
+                cardClicked(front: front_9, back: back_9, indexChosenCards: sender.tag, cardView: card_9)
+            case 9:
+                cardClicked(front: front_10, back: back_10, indexChosenCards: sender.tag, cardView: card_10)
+            case 10:
+                cardClicked(front: front_11, back: back_11, indexChosenCards: sender.tag, cardView: card_11)
+            case 11:
+                cardClicked(front: front_12, back: back_12, indexChosenCards: sender.tag, cardView: card_12)
+            case 12:
+                cardClicked(front: front_13, back: back_13, indexChosenCards: sender.tag, cardView: card_13)
+            case 13:
+                cardClicked(front: front_14, back: back_14, indexChosenCards: sender.tag, cardView: card_14)
+            case 14:
+                cardClicked(front: front_15, back: back_15, indexChosenCards: sender.tag, cardView: card_15)
+            case 15:
+                cardClicked(front: front_16, back: back_16, indexChosenCards: sender.tag, cardView: card_16)
+            case 16:
+                cardClicked(front: front_17, back: back_17, indexChosenCards: sender.tag, cardView: card_17)
+            case 17:
+                cardClicked(front: front_18, back: back_18, indexChosenCards: sender.tag, cardView: card_18)
+            case 18:
+                cardClicked(front: front_19, back: back_19, indexChosenCards: sender.tag, cardView: card_19)
+            case 19:
+                cardClicked(front: front_20, back: back_20, indexChosenCards: sender.tag, cardView: card_20)
             default:
                 break
         }
@@ -187,7 +225,8 @@ class ViewController: UIViewController {
         for card in 0..<arrayOfCards.count {
             arrayOfCards[card].isHidden = false
         }
-        arrayOfAnimalsNames = ["panda.png","panda.png","penguin.png","penguin.png"]
+        arrayOfAnimalsNames = ["castor.png","castor.png","cavalo.png","cavalo.png","cobra.png","cobra.png","coruja.png","coruja.png","elefante.png","elefante.png","leao.png","leao.png",
+                               "pato.png","pato.png","sapo.png","sapo.png","panda.png","panda.png","penguin.png","penguin.png"]
         arrayOfRandomAnimals = []
         randomAnimalNames()
         setImageToCard()
