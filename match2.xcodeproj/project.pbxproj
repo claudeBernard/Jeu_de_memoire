@@ -12,6 +12,9 @@
 		9B1D300E1F729E540086D056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1D300C1F729E540086D056 /* Main.storyboard */; };
 		9B1D30101F729E540086D056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1D300F1F729E540086D056 /* Assets.xcassets */; };
 		9B1D30131F729E540086D056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1D30111F729E540086D056 /* LaunchScreen.storyboard */; };
+		9B1D301E1F72A0EC0086D056 /* front.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1D301B1F72A0EC0086D056 /* front.png */; };
+		9B1D301F1F72A0EC0086D056 /* panda.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1D301C1F72A0EC0086D056 /* panda.png */; };
+		9B1D30201F72A0EC0086D056 /* penguin.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1D301D1F72A0EC0086D056 /* penguin.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		9B1D300F1F729E540086D056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B1D30121F729E540086D056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B1D30141F729E540086D056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B1D301B1F72A0EC0086D056 /* front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = front.png; path = images/front.png; sourceTree = "<group>"; };
+		9B1D301C1F72A0EC0086D056 /* panda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = panda.png; path = images/panda.png; sourceTree = "<group>"; };
+		9B1D301D1F72A0EC0086D056 /* penguin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = penguin.png; path = images/penguin.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 		9B1D30071F729E540086D056 /* match2 */ = {
 			isa = PBXGroup;
 			children = (
+				9B1D301A1F729E940086D056 /* images */,
 				9B1D30081F729E540086D056 /* AppDelegate.swift */,
 				9B1D300A1F729E540086D056 /* ViewController.swift */,
 				9B1D300C1F729E540086D056 /* Main.storyboard */,
@@ -62,6 +69,16 @@
 				9B1D30141F729E540086D056 /* Info.plist */,
 			);
 			path = match2;
+			sourceTree = "<group>";
+		};
+		9B1D301A1F729E940086D056 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				9B1D301B1F72A0EC0086D056 /* front.png */,
+				9B1D301C1F72A0EC0086D056 /* panda.png */,
+				9B1D301D1F72A0EC0086D056 /* penguin.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +140,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1D30201F72A0EC0086D056 /* penguin.png in Resources */,
+				9B1D301F1F72A0EC0086D056 /* panda.png in Resources */,
 				9B1D30131F729E540086D056 /* LaunchScreen.storyboard in Resources */,
+				9B1D301E1F72A0EC0086D056 /* front.png in Resources */,
 				9B1D30101F729E540086D056 /* Assets.xcassets in Resources */,
 				9B1D300E1F729E540086D056 /* Main.storyboard in Resources */,
 			);
