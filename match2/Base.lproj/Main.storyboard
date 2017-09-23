@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller Wall-->
         <scene sceneID="3Od-hw-cTK">
             <objects>
-                <viewController id="vQI-8B-rwB" sceneMemberID="viewController">
+                <viewController id="vQI-8B-rwB" customClass="ViewControllerWall" customModule="match2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DEZ-yv-Xko"/>
                         <viewControllerLayoutGuide type="bottom" id="MXV-Aa-1vp"/>
@@ -30,11 +30,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="button_play.png"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="sXE-bg-9Bd"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="sXE-bg-9Bd"/>
                                 </connections>
                             </button>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="wba-qd-eA4" id="lOG-lY-UI7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGV-Pe-S2O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -748,9 +751,9 @@
                                 </subviews>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prh-Hg-W0h">
-                                <rect key="frame" x="341" y="947" width="86" height="38"/>
+                                <rect key="frame" x="328" y="929" width="113" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <state key="normal" title="Reset">
                                     <color key="titleColor" red="1" green="1" blue="0.97983955540000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -759,7 +762,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.53096712095804866" green="0.70670399783549842" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.5490196078431373" green="0.82352941176470584" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="ImageView_1" destination="d2N-hN-uAZ" id="A0a-ds-FPL"/>
@@ -846,7 +849,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1087" y="22"/>
+            <point key="canvasLocation" x="1086.71875" y="21.6796875"/>
         </scene>
     </scenes>
     <resources>
