@@ -94,6 +94,8 @@ class ViewController: UIViewController {
     var arrayOfHidingFronts  = [UIView]()
     var arrayOfCards         = [UIView]()
     
+    var resetUsage = true
+    
     //-------------------
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,11 +107,11 @@ class ViewController: UIViewController {
     }
     //-------------------
     @IBAction func showCard(_ sender: UIButton) {
-        
+        resetUsage = false
+        print(resetUsage)
         if arrayOfHidingFronts.count == 2 {
             return
         }
-        
         switch sender.tag {
             case 0:
                 cardClicked(front: front_1, back: back_1, indexChosenCards: sender.tag, cardView: card_1)
@@ -183,6 +185,7 @@ class ViewController: UIViewController {
         }
         arrayOfShowInBacks  = []
         arrayOfHidingFronts = []
+        resetUsage = true
     }
     //-------------------
     func setImageToCard () {
@@ -222,14 +225,17 @@ class ViewController: UIViewController {
     }
     //-------------------
     @IBAction func reset(_ sender: UIButton) {
-        for card in 0..<arrayOfCards.count {
-            arrayOfCards[card].isHidden = false
+        print(resetUsage)
+        if resetUsage {
+            for card in 0..<arrayOfCards.count {
+                arrayOfCards[card].isHidden = false
+            }
+            arrayOfAnimalsNames = ["castor.png","castor.png","cavalo.png","cavalo.png","cobra.png","cobra.png","coruja.png","coruja.png","elefante.png","elefante.png","leao.png","leao.png",
+                                   "pato.png","pato.png","sapo.png","sapo.png","panda.png","panda.png","penguin.png","penguin.png"]
+            arrayOfRandomAnimals = []
+            randomAnimalNames()
+            setImageToCard()
         }
-        arrayOfAnimalsNames = ["castor.png","castor.png","cavalo.png","cavalo.png","cobra.png","cobra.png","coruja.png","coruja.png","elefante.png","elefante.png","leao.png","leao.png",
-                               "pato.png","pato.png","sapo.png","sapo.png","panda.png","panda.png","penguin.png","penguin.png"]
-        arrayOfRandomAnimals = []
-        randomAnimalNames()
-        setImageToCard()
     }
     //-------------------
 }
