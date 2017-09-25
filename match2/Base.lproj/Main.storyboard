@@ -30,7 +30,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="button_play.png"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="sXE-bg-9Bd"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="mainSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="sXE-bg-9Bd"/>
                                 </connections>
                             </button>
                         </subviews>
