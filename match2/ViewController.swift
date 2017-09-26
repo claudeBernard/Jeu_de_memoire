@@ -85,8 +85,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var card_20: UIView!
     
     var arrayOfImageViews:     [UIImageView]!
-    var arrayOfAnimalsNames  = ["castor.png","castor.png","cavalo.png","cavalo.png","cobra.png","cobra.png","coruja.png","coruja.png","elefante.png","elefante.png","leao.png","leao.png",
-                                "pato.png","pato.png","sapo.png","sapo.png","panda.png","panda.png","penguin.png","penguin.png"]
+    var arrayOfAnimalsNames  = ["castor.png","castor.png","cavalo.png","cavalo.png","coruja.png","coruja.png","leao.png","leao.png","panda.png","panda.png","pato.png","pato.png",
+                                "penguin.png","penguin.png","sapo.png","sapo.png","squirrel.png","squirrel.png","tartaruga.png","tartaruga.png"]
     var arrayOfRandomAnimals = [String]()
     var arrayOfChosenCards   = [String]()
     var arrayOfChosenViews   = [UIView]()
@@ -230,8 +230,8 @@ class ViewController: UIViewController {
             for card in 0..<arrayOfCards.count {
                 arrayOfCards[card].isHidden = false
             }
-            arrayOfAnimalsNames = ["castor.png","castor.png","cavalo.png","cavalo.png","cobra.png","cobra.png","coruja.png","coruja.png","elefante.png","elefante.png","leao.png","leao.png",
-                                   "pato.png","pato.png","sapo.png","sapo.png","panda.png","panda.png","penguin.png","penguin.png"]
+            arrayOfAnimalsNames = ["castor.png","castor.png","cavalo.png","cavalo.png","coruja.png","coruja.png","leao.png","leao.png","panda.png","panda.png","pato.png","pato.png",
+                                   "penguin.png","penguin.png","sapo.png","sapo.png","squirrel.png","squirrel.png","tartaruga.png","tartaruga.png"]
             arrayOfRandomAnimals = []
             randomAnimalNames()
             setImageToCard()
