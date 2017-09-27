@@ -11,7 +11,6 @@
 		9B1898411F76DE93003F499A /* button_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1898401F76DE93003F499A /* button_play.png */; };
 		9B1898441F76EAD7003F499A /* ViewControllerWall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1898431F76EAD7003F499A /* ViewControllerWall.swift */; };
 		9B1A4E801F7AFA62008E3750 /* reset_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1A4E7F1F7AFA62008E3750 /* reset_button.png */; };
-		9B1A4E821F7AFE40008E3750 /* wallpaper_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1A4E811F7AFE40008E3750 /* wallpaper_02.png */; };
 		9B1A4E8E1F7B07AE008E3750 /* castor.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1A4E831F7B07AE008E3750 /* castor.png */; };
 		9B1A4E8F1F7B07AE008E3750 /* cavalo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1A4E841F7B07AE008E3750 /* cavalo.png */; };
 		9B1A4E901F7B07AE008E3750 /* coruja.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1A4E851F7B07AE008E3750 /* coruja.png */; };
@@ -28,6 +27,7 @@
 		9B1D300E1F729E540086D056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1D300C1F729E540086D056 /* Main.storyboard */; };
 		9B1D30101F729E540086D056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1D300F1F729E540086D056 /* Assets.xcassets */; };
 		9B1D30131F729E540086D056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1D30111F729E540086D056 /* LaunchScreen.storyboard */; };
+		9BF203AF1F7C57CD00E0E485 /* wallpaper_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF203AE1F7C57CD00E0E485 /* wallpaper_02.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,6 @@
 		9B1898401F76DE93003F499A /* button_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_play.png; path = images/button_play.png; sourceTree = "<group>"; };
 		9B1898431F76EAD7003F499A /* ViewControllerWall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerWall.swift; sourceTree = "<group>"; };
 		9B1A4E7F1F7AFA62008E3750 /* reset_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reset_button.png; path = images/reset_button.png; sourceTree = "<group>"; };
-		9B1A4E811F7AFE40008E3750 /* wallpaper_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wallpaper_02.png; path = images/wallpaper_02.png; sourceTree = "<group>"; };
 		9B1A4E831F7B07AE008E3750 /* castor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = castor.png; path = images/castor.png; sourceTree = "<group>"; };
 		9B1A4E841F7B07AE008E3750 /* cavalo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cavalo.png; path = images/cavalo.png; sourceTree = "<group>"; };
 		9B1A4E851F7B07AE008E3750 /* coruja.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coruja.png; path = images/coruja.png; sourceTree = "<group>"; };
@@ -54,6 +53,7 @@
 		9B1D300F1F729E540086D056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B1D30121F729E540086D056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B1D30141F729E540086D056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BF203AE1F7C57CD00E0E485 /* wallpaper_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wallpaper_02.png; path = images/wallpaper_02.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +101,7 @@
 		9B1D301A1F729E940086D056 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				9BF203AE1F7C57CD00E0E485 /* wallpaper_02.png */,
 				9B1A4E831F7B07AE008E3750 /* castor.png */,
 				9B1A4E841F7B07AE008E3750 /* cavalo.png */,
 				9B1A4E851F7B07AE008E3750 /* coruja.png */,
@@ -112,7 +113,6 @@
 				9B1A4E8B1F7B07AE008E3750 /* sapo.png */,
 				9B1A4E8C1F7B07AE008E3750 /* squirrel.png */,
 				9B1A4E8D1F7B07AE008E3750 /* tartaruga.png */,
-				9B1A4E811F7AFE40008E3750 /* wallpaper_02.png */,
 				9B1A4E7F1F7AFA62008E3750 /* reset_button.png */,
 				9B1898401F76DE93003F499A /* button_play.png */,
 				9B18983E1F76D96D003F499A /* wallpaper_01.png */,
@@ -185,7 +185,7 @@
 				9B1A4E951F7B07AE008E3750 /* penguin.png in Resources */,
 				9B1A4E941F7B07AE008E3750 /* pato.png in Resources */,
 				9B1A4E981F7B07AE008E3750 /* tartaruga.png in Resources */,
-				9B1A4E821F7AFE40008E3750 /* wallpaper_02.png in Resources */,
+				9BF203AF1F7C57CD00E0E485 /* wallpaper_02.png in Resources */,
 				9B18983F1F76D96D003F499A /* wallpaper_01.png in Resources */,
 				9B1A4E931F7B07AE008E3750 /* panda.png in Resources */,
 				9B1D30131F729E540086D056 /* LaunchScreen.storyboard in Resources */,

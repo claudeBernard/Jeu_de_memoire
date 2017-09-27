@@ -108,7 +108,6 @@ class ViewController: UIViewController {
     //-------------------
     @IBAction func showCard(_ sender: UIButton) {
         resetUsage = false
-        print(resetUsage)
         if arrayOfHidingFronts.count == 2 {
             return
         }
@@ -225,7 +224,6 @@ class ViewController: UIViewController {
     }
     //-------------------
     @IBAction func reset(_ sender: UIButton) {
-        print(resetUsage)
         if resetUsage {
             for card in 0..<arrayOfCards.count {
                 arrayOfCards[card].isHidden = false

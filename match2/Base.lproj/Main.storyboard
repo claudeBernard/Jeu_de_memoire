@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vQI-8B-rwB">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,15 +18,15 @@
                         <viewControllerLayoutGuide type="bottom" id="MXV-Aa-1vp"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iSb-ez-8FF">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wallpaper_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Sm-SD-CVZ">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wba-qd-eA4">
-                                <rect key="frame" x="167" y="252" width="434" height="200"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wba-qd-eA4">
+                                <rect key="frame" x="403" y="376" width="434" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="button_play.png"/>
                                 <connections>
@@ -41,7 +41,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGV-Pe-S2O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="377.34375" y="21.6796875"/>
+            <point key="canvasLocation" x="377.34375" y="21.522693997071741"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -52,15 +52,15 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wallpaper_02.png" translatesAutoresizingMaskIntoConstraints="NO" id="arB-uk-UxA">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wallpaper_02.png" translatesAutoresizingMaskIntoConstraints="NO" id="iKV-Mm-ezy">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ffK-Vd-JA6" userLabel="card_1">
-                                <rect key="frame" x="60" y="39" width="150" height="150"/>
+                                <rect key="frame" x="123" y="70" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ArB-cu-G3m" userLabel="back">
@@ -82,7 +82,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPN-hx-J5H">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <rect key="frame" x="0.0" y="-8" width="150" height="150"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="showCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aq6-pI-wU4"/>
@@ -93,7 +93,7 @@
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bmx-b4-FQB" userLabel="card_2">
-                                <rect key="frame" x="226" y="39" width="150" height="150"/>
+                                <rect key="frame" x="334" y="70" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AG2-dI-mZX" userLabel="back">
@@ -126,7 +126,7 @@
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7EE-F2-Eoh" userLabel="card_3">
-                                <rect key="frame" x="392" y="39" width="150" height="150"/>
+                                <rect key="frame" x="540" y="70" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="otN-eR-Mu8" userLabel="back">
@@ -159,7 +159,7 @@
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Ky-YE-ljf" userLabel="card_4">
-                                <rect key="frame" x="558" y="39" width="150" height="150"/>
+                                <rect key="frame" x="751" y="70" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fVc-Fi-Ict" userLabel="back">
@@ -192,7 +192,7 @@
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aHc-a0-7b0" userLabel="card_5">
-                                <rect key="frame" x="60" y="197" width="150" height="150"/>
+                                <rect key="frame" x="123" y="257" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GlH-Nv-xA2" userLabel="back">
@@ -225,7 +225,7 @@
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6eu-3I-zNt" userLabel="card_6">
-                                <rect key="frame" x="226" y="197" width="150" height="150"/>
+                                <rect key="frame" x="334" y="257" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SuA-oR-9aB" userLabel="back">
@@ -258,7 +258,7 @@
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="muN-IV-8jp" userLabel="card_7">
-                                <rect key="frame" x="392" y="197" width="150" height="150"/>
+                                <rect key="frame" x="540" y="257" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hjL-pB-fAZ" userLabel="back">
@@ -291,7 +291,7 @@
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UQi-65-0tp" userLabel="card_8">
-                                <rect key="frame" x="558" y="197" width="150" height="150"/>
+                                <rect key="frame" x="751" y="257" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iMV-IS-08o" userLabel="back">
@@ -324,7 +324,7 @@
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W0X-xc-dye" userLabel="card_9">
-                                <rect key="frame" x="60" y="355" width="150" height="150"/>
+                                <rect key="frame" x="123" y="439" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dle-As-Jaz" userLabel="back">
@@ -357,7 +357,7 @@
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNl-ek-tD6" userLabel="card_10">
-                                <rect key="frame" x="226" y="355" width="150" height="150"/>
+                                <rect key="frame" x="334" y="439" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eBI-jy-gBV" userLabel="back">
@@ -390,7 +390,7 @@
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Emm-TJ-WLg" userLabel="card_11">
-                                <rect key="frame" x="392" y="355" width="150" height="150"/>
+                                <rect key="frame" x="540" y="439" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZK2-Qn-1wM" userLabel="back">
@@ -423,7 +423,7 @@
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V7Z-zx-KbQ" userLabel="card_12">
-                                <rect key="frame" x="558" y="355" width="150" height="150"/>
+                                <rect key="frame" x="751" y="439" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ljt-ZT-Q9e" userLabel="back">
@@ -456,7 +456,7 @@
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EtM-HO-C5u" userLabel="card_13">
-                                <rect key="frame" x="60" y="513" width="150" height="150"/>
+                                <rect key="frame" x="123" y="623" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VEM-lL-oCk" userLabel="back">
@@ -489,7 +489,7 @@
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DLE-2d-qgx" userLabel="card_14">
-                                <rect key="frame" x="226" y="513" width="150" height="150"/>
+                                <rect key="frame" x="334" y="623" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fIt-cP-hCj" userLabel="back">
@@ -522,7 +522,7 @@
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vX7-g7-QKz" userLabel="card_15">
-                                <rect key="frame" x="392" y="513" width="150" height="150"/>
+                                <rect key="frame" x="540" y="623" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Prz-l9-wVV" userLabel="back">
@@ -555,7 +555,7 @@
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tz3-a8-LEi" userLabel="card_16">
-                                <rect key="frame" x="558" y="513" width="150" height="150"/>
+                                <rect key="frame" x="751" y="623" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rlK-2r-JnZ" userLabel="back">
@@ -588,7 +588,7 @@
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Kz-5C-10n" userLabel="card_17">
-                                <rect key="frame" x="60" y="671" width="150" height="150"/>
+                                <rect key="frame" x="123" y="803" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yeA-H2-Mut" userLabel="back">
@@ -621,7 +621,7 @@
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZKX-hb-6qC" userLabel="card_18">
-                                <rect key="frame" x="226" y="671" width="150" height="150"/>
+                                <rect key="frame" x="334" y="803" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EaF-YM-qFA" userLabel="back">
@@ -654,7 +654,7 @@
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wYF-P3-6bi" userLabel="card_19">
-                                <rect key="frame" x="392" y="671" width="150" height="150"/>
+                                <rect key="frame" x="540" y="803" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JDL-Ji-CW3" userLabel="back">
@@ -687,7 +687,7 @@
                                 </subviews>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qbJ-8e-ieI" userLabel="card_20">
-                                <rect key="frame" x="558" y="671" width="150" height="150"/>
+                                <rect key="frame" x="751" y="803" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qza-9m-Opu" userLabel="back">
@@ -720,7 +720,7 @@
                                 </subviews>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="prh-Hg-W0h">
-                                <rect key="frame" x="321" y="848" width="127" height="127"/>
+                                <rect key="frame" x="449" y="978" width="127" height="127"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="reset_button.png">
                                     <color key="titleColor" red="1" green="1" blue="0.97983955540000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -816,7 +816,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1086.71875" y="21.6796875"/>
+            <point key="canvasLocation" x="1086.328125" y="21.522693997071741"/>
         </scene>
     </scenes>
     <resources>
@@ -834,6 +834,6 @@
         <image name="squirrel.png" width="300" height="300"/>
         <image name="tartaruga.png" width="300" height="300"/>
         <image name="wallpaper_01.png" width="4096" height="5464"/>
-        <image name="wallpaper_02.png" width="4096" height="5464"/>
+        <image name="wallpaper_02.png" width="2048" height="2732"/>
     </resources>
 </document>
