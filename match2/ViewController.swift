@@ -63,6 +63,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var ImageView_18: UIImageView!
     @IBOutlet weak var ImageView_19: UIImageView!
     @IBOutlet weak var ImageView_20: UIImageView!
+    @IBOutlet weak var trofeu:       UIImageView!
     @IBOutlet weak var card_1:  UIView!
     @IBOutlet weak var card_2:  UIView!
     @IBOutlet weak var card_3:  UIView!
@@ -83,7 +84,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var card_18: UIView!
     @IBOutlet weak var card_19: UIView!
     @IBOutlet weak var card_20: UIView!
+    @IBOutlet weak var Congratulation: UIView!
     
+
     var arrayOfImageViews:     [UIImageView]!
     var arrayOfAnimalsNames  = ["castor.png","castor.png","cavalo.png","cavalo.png","coruja.png","coruja.png","leao.png","leao.png","panda.png","panda.png","pato.png","pato.png",
                                 "penguin.png","penguin.png","sapo.png","sapo.png","squirrel.png","squirrel.png","tartaruga.png","tartaruga.png"]
@@ -95,6 +98,8 @@ class ViewController: UIViewController {
     var arrayOfCards         = [UIView]()
     
     var resetUsage = true
+    var win = 0
+    var actionWin = false
     
     //-------------------
     override func viewDidLoad() {
@@ -185,6 +190,10 @@ class ViewController: UIViewController {
         arrayOfShowInBacks  = []
         arrayOfHidingFronts = []
         resetUsage = true
+        if win == 10 {
+            actionWin = true
+            youWin()
+        }
     }
     //-------------------
     func setImageToCard () {
@@ -209,6 +218,7 @@ class ViewController: UIViewController {
         if arrayOfChosenCards.count == 2 {
             if arrayOfChosenCards[0] == arrayOfChosenCards[1]{
                 Timer.scheduledTimer(timeInterval: 2, target: self, selector: (#selector(hideCard)), userInfo: nil, repeats: false)
+                win = win + 1
             } else {
             arrayOfChosenViews = []
             }
@@ -233,7 +243,25 @@ class ViewController: UIViewController {
             arrayOfRandomAnimals = []
             randomAnimalNames()
             setImageToCard()
+            actionWin = false
+            Congratulation.isHidden = true
         }
+    }
+    //-------------------
+    func youWin() {
+        if actionWin {
+            Congratulation.isHidden = false
+            animationWinUp()
+            animationWinDown()
+        }
+    }
+    //-------------------
+    func animationWinUp() {
+        UIView.animate(withDuration: 1, delay: 0, options: [.curveEaseInOut], animations: {self.trofeu.transform = CGAffineTransform(scaleX:2, y:2)},completion: {(true) in self.animationWinDown()})
+    }
+    //-------------------
+    func animationWinDown() {
+        UIView.animate(withDuration: 1, delay: 0, options: [.curveEaseInOut], animations: {self.trofeu.transform = CGAffineTransform(scaleX:1, y:1)},completion: {(true) in self.animationWinUp()})
     }
     //-------------------
 }

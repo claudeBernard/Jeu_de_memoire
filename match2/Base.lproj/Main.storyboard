@@ -729,9 +729,27 @@
                                     <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dAU-rT-304"/>
                                 </connections>
                             </button>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CqM-Yf-paM">
+                                <rect key="frame" x="106" y="28" width="813" height="970"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trofeu.png" translatesAutoresizingMaskIntoConstraints="NO" id="bl6-hb-e2E">
+                                        <rect key="frame" x="-14" y="326" width="840" height="548"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Félicitations" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8U-qZ-Vti">
+                                        <rect key="frame" x="38" y="61" width="737" height="149"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="100"/>
+                                        <color key="textColor" red="1" green="0.1556555054" blue="0.17807612910000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="Congratulation" destination="CqM-Yf-paM" id="QEB-sX-ev9"/>
                         <outlet property="ImageView_1" destination="d2N-hN-uAZ" id="A0a-ds-FPL"/>
                         <outlet property="ImageView_10" destination="i2E-z1-Ihi" id="S9a-Su-X3a"/>
                         <outlet property="ImageView_11" destination="Je4-5G-Yio" id="Ck7-Uc-KA9"/>
@@ -812,6 +830,7 @@
                         <outlet property="front_7" destination="Yan-Sy-MRI" id="xfc-Cw-mc4"/>
                         <outlet property="front_8" destination="Qky-MW-cQu" id="mvC-QP-wPd"/>
                         <outlet property="front_9" destination="LRx-CV-Xpt" id="hCI-7O-15q"/>
+                        <outlet property="trofeu" destination="bl6-hb-e2E" id="owY-Cm-sQl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -833,6 +852,7 @@
         <image name="sapo.png" width="300" height="300"/>
         <image name="squirrel.png" width="300" height="300"/>
         <image name="tartaruga.png" width="300" height="300"/>
+        <image name="trofeu.png" width="600" height="400"/>
         <image name="wallpaper_01.png" width="4096" height="5464"/>
         <image name="wallpaper_02.png" width="2048" height="2732"/>
     </resources>

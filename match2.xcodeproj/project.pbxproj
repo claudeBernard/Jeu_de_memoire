@@ -28,6 +28,7 @@
 		9B1D30101F729E540086D056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1D300F1F729E540086D056 /* Assets.xcassets */; };
 		9B1D30131F729E540086D056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1D30111F729E540086D056 /* LaunchScreen.storyboard */; };
 		9BF203AF1F7C57CD00E0E485 /* wallpaper_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF203AE1F7C57CD00E0E485 /* wallpaper_02.png */; };
+		9BF203B11F7C5DCA00E0E485 /* trofeu.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF203B01F7C5DCA00E0E485 /* trofeu.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		9B1D30121F729E540086D056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B1D30141F729E540086D056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BF203AE1F7C57CD00E0E485 /* wallpaper_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wallpaper_02.png; path = images/wallpaper_02.png; sourceTree = "<group>"; };
+		9BF203B01F7C5DCA00E0E485 /* trofeu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trofeu.png; path = images/trofeu.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		9B1D301A1F729E940086D056 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				9BF203B01F7C5DCA00E0E485 /* trofeu.png */,
 				9BF203AE1F7C57CD00E0E485 /* wallpaper_02.png */,
 				9B1A4E831F7B07AE008E3750 /* castor.png */,
 				9B1A4E841F7B07AE008E3750 /* cavalo.png */,
@@ -181,6 +184,7 @@
 			files = (
 				9B1898411F76DE93003F499A /* button_play.png in Resources */,
 				9B1A4E8E1F7B07AE008E3750 /* castor.png in Resources */,
+				9BF203B11F7C5DCA00E0E485 /* trofeu.png in Resources */,
 				9B1A4E801F7AFA62008E3750 /* reset_button.png in Resources */,
 				9B1A4E951F7B07AE008E3750 /* penguin.png in Resources */,
 				9B1A4E941F7B07AE008E3750 /* pato.png in Resources */,
