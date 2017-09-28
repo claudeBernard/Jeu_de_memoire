@@ -26,7 +26,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wba-qd-eA4">
-                                <rect key="frame" x="403" y="376" width="434" height="200"/>
+                                <rect key="frame" x="535" y="388" width="434" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="button_play.png"/>
                                 <connections>
@@ -734,16 +734,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trofeu.png" translatesAutoresizingMaskIntoConstraints="NO" id="bl6-hb-e2E">
-                                        <rect key="frame" x="-14" y="326" width="840" height="548"/>
+                                        <rect key="frame" x="-14" y="-28" width="840" height="968"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Félicitations" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8U-qZ-Vti">
-                                        <rect key="frame" x="38" y="61" width="737" height="149"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="100"/>
-                                        <color key="textColor" red="1" green="0.1556555054" blue="0.17807612910000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                             </view>
                         </subviews>
@@ -852,7 +845,7 @@
         <image name="sapo.png" width="300" height="300"/>
         <image name="squirrel.png" width="300" height="300"/>
         <image name="tartaruga.png" width="300" height="300"/>
-        <image name="trofeu.png" width="600" height="400"/>
+        <image name="trofeu.png" width="700" height="700"/>
         <image name="wallpaper_01.png" width="4096" height="5464"/>
         <image name="wallpaper_02.png" width="2048" height="2732"/>
     </resources>
