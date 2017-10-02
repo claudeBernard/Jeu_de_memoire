@@ -80,7 +80,7 @@
 		9B1A4E8B1F7B07AE008E3750 /* sapo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sapo.png; path = images/sapo.png; sourceTree = "<group>"; };
 		9B1A4E8C1F7B07AE008E3750 /* squirrel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = squirrel.png; path = images/squirrel.png; sourceTree = "<group>"; };
 		9B1A4E8D1F7B07AE008E3750 /* tartaruga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tartaruga.png; path = images/tartaruga.png; sourceTree = "<group>"; };
-		9B1D30051F729E540086D056 /* match2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = match2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B1D30051F729E540086D056 /* Jeu de Memoire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jeu de Memoire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1D30081F729E540086D056 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B1D300A1F729E540086D056 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9B1D300D1F729E540086D056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 		9B1D30061F729E540086D056 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B1D30051F729E540086D056 /* match2.app */,
+				9B1D30051F729E540086D056 /* Jeu de Memoire.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -241,9 +241,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9B1D30041F729E540086D056 /* match2 */ = {
+		9B1D30041F729E540086D056 /* Jeu de Memoire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B1D30171F729E540086D056 /* Build configuration list for PBXNativeTarget "match2" */;
+			buildConfigurationList = 9B1D30171F729E540086D056 /* Build configuration list for PBXNativeTarget "Jeu de Memoire" */;
 			buildPhases = (
 				9B1D30011F729E540086D056 /* Sources */,
 				9B1D30021F729E540086D056 /* Frameworks */,
@@ -253,9 +253,9 @@
 			);
 			dependencies = (
 			);
-			name = match2;
+			name = "Jeu de Memoire";
 			productName = match2;
-			productReference = 9B1D30051F729E540086D056 /* match2.app */;
+			productReference = 9B1D30051F729E540086D056 /* Jeu de Memoire.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -274,7 +274,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9B1D30001F729E540086D056 /* Build configuration list for PBXProject "match2" */;
+			buildConfigurationList = 9B1D30001F729E540086D056 /* Build configuration list for PBXProject "Jeu de Memoire" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -287,7 +287,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9B1D30041F729E540086D056 /* match2 */,
+				9B1D30041F729E540086D056 /* Jeu de Memoire */,
 			);
 		};
 /* End PBXProject section */
@@ -507,7 +507,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9B1D30001F729E540086D056 /* Build configuration list for PBXProject "match2" */ = {
+		9B1D30001F729E540086D056 /* Build configuration list for PBXProject "Jeu de Memoire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B1D30151F729E540086D056 /* Debug */,
@@ -516,7 +516,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B1D30171F729E540086D056 /* Build configuration list for PBXNativeTarget "match2" */ = {
+		9B1D30171F729E540086D056 /* Build configuration list for PBXNativeTarget "Jeu de Memoire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B1D30181F729E540086D056 /* Debug */,

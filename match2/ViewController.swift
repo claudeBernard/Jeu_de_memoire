@@ -104,7 +104,7 @@ class ViewController: UIViewController {
     var applause: AVAudioPlayer?
     var loseCard: AVAudioPlayer?
     var winCard:  AVAudioPlayer?
-    var controllSound = 0
+    var controlSound = 0
     
     //-------------------
     override func viewDidLoad() {
@@ -208,7 +208,7 @@ class ViewController: UIViewController {
         arrayOfShowInBacks  = []
         arrayOfHidingFronts = []
         resetUsage = true
-        if (controllSound == 1) {
+        if (controlSound == 1) {
             winCard?.play()
         } else {
             loseCard?.play()
@@ -242,10 +242,10 @@ class ViewController: UIViewController {
             if arrayOfChosenCards[0] == arrayOfChosenCards[1]{
                 Timer.scheduledTimer(timeInterval: 2, target: self, selector: (#selector(hideCard)), userInfo: nil, repeats: false)
                 win = win + 1
-                controllSound = 1
+                controlSound = 1
             } else {
                 arrayOfChosenViews = []
-                controllSound = 2
+                controlSound = 2
             }
                 arrayOfChosenCards = []
         }

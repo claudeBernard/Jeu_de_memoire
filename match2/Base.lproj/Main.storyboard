@@ -12,7 +12,7 @@
         <!--View Controller Wall-->
         <scene sceneID="3Od-hw-cTK">
             <objects>
-                <viewController id="vQI-8B-rwB" customClass="ViewControllerWall" customModule="match2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vQI-8B-rwB" customClass="ViewControllerWall" customModule="Jeu_de_Memoire" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DEZ-yv-Xko"/>
                         <viewControllerLayoutGuide type="bottom" id="MXV-Aa-1vp"/>
@@ -29,7 +29,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="button_play.png"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="mainSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="sXE-bg-9Bd"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="mainSegue" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="sXE-bg-9Bd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,7 +53,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="match2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Jeu_de_Memoire" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>

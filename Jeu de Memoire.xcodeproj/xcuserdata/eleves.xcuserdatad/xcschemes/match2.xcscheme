@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9B1D30041F729E540086D056"
-               BuildableName = "match2.app"
-               BlueprintName = "match2"
-               ReferencedContainer = "container:match2.xcodeproj">
+               BuildableName = "Jeu de Memoire.app"
+               BlueprintName = "Jeu de Memoire"
+               ReferencedContainer = "container:Jeu de Memoire.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9B1D30041F729E540086D056"
-            BuildableName = "match2.app"
-            BlueprintName = "match2"
-            ReferencedContainer = "container:match2.xcodeproj">
+            BuildableName = "Jeu de Memoire.app"
+            BlueprintName = "Jeu de Memoire"
+            ReferencedContainer = "container:Jeu de Memoire.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9B1D30041F729E540086D056"
-            BuildableName = "match2.app"
-            BlueprintName = "match2"
-            ReferencedContainer = "container:match2.xcodeproj">
+            BuildableName = "Jeu de Memoire.app"
+            BlueprintName = "Jeu de Memoire"
+            ReferencedContainer = "container:Jeu de Memoire.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9B1D30041F729E540086D056"
-            BuildableName = "match2.app"
-            BlueprintName = "match2"
-            ReferencedContainer = "container:match2.xcodeproj">
+            BuildableName = "Jeu de Memoire.app"
+            BlueprintName = "Jeu de Memoire"
+            ReferencedContainer = "container:Jeu de Memoire.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
