@@ -1,5 +1,6 @@
 //=======================================
 import UIKit
+import AVFoundation
 //=======================================
 class ViewController: UIViewController {
     //-------------------
@@ -100,6 +101,10 @@ class ViewController: UIViewController {
     var resetUsage = true
     var win = 0
     var actionWin = false
+    var applause: AVAudioPlayer?
+    var loseCard: AVAudioPlayer?
+    var winCard:  AVAudioPlayer?
+    var controllSound = 0
     
     //-------------------
     override func viewDidLoad() {
@@ -109,6 +114,20 @@ class ViewController: UIViewController {
                              ImageView_13, ImageView_14, ImageView_15, ImageView_16, ImageView_17, ImageView_18, ImageView_19, ImageView_20]
         randomAnimalNames ()
         setImageToCard ()
+        
+        guard let url_applause = Bundle.main.url(forResource: "applause", withExtension: "mp3") else { return }
+        guard let url_loseCard = Bundle.main.url(forResource: "loseCard", withExtension: "mp3") else { return }
+        guard let url_winCard  = Bundle.main.url(forResource: "winCard",  withExtension: "mp3") else { return }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            applause = try AVAudioPlayer(contentsOf: url_applause)
+            loseCard = try AVAudioPlayer(contentsOf: url_loseCard)
+            winCard  = try AVAudioPlayer(contentsOf: url_winCard)
+        } catch let error {
+            print(error.localizedDescription)
+        }
     }
     //-------------------
     @IBAction func showCard(_ sender: UIButton) {
@@ -116,6 +135,7 @@ class ViewController: UIViewController {
         if arrayOfHidingFronts.count == 2 {
             return
         }
+        
         switch sender.tag {
             case 0:
                 cardClicked(front: front_1, back: back_1, indexChosenCards: sender.tag, cardView: card_1)
@@ -184,12 +204,15 @@ class ViewController: UIViewController {
     }
     //-------------------
     @objc func reflip () {
-        for index in 0..<arrayOfShowInBacks.count {
-        flipCard(from: arrayOfShowInBacks[index], to: arrayOfHidingFronts[index])
-        }
+        for index in 0..<arrayOfShowInBacks.count {flipCard(from: arrayOfShowInBacks[index], to: arrayOfHidingFronts[index])}
         arrayOfShowInBacks  = []
         arrayOfHidingFronts = []
         resetUsage = true
+        if (controllSound == 1) {
+            winCard?.play()
+        } else {
+            loseCard?.play()
+        }
         if win == 10 {
             actionWin = true
             youWin()
@@ -219,10 +242,12 @@ class ViewController: UIViewController {
             if arrayOfChosenCards[0] == arrayOfChosenCards[1]{
                 Timer.scheduledTimer(timeInterval: 2, target: self, selector: (#selector(hideCard)), userInfo: nil, repeats: false)
                 win = win + 1
+                controllSound = 1
             } else {
-            arrayOfChosenViews = []
+                arrayOfChosenViews = []
+                controllSound = 2
             }
-            arrayOfChosenCards = []
+                arrayOfChosenCards = []
         }
         resetCards()
     }
@@ -253,6 +278,7 @@ class ViewController: UIViewController {
             Congratulation.isHidden = false
             animationWinUp()
             animationWinDown()
+            applause?.play()
         }
     }
     //-------------------
@@ -265,15 +291,3 @@ class ViewController: UIViewController {
     }
     //-------------------
 }
-
-
-
-
-
-
-
-
-
-
-
-

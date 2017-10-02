@@ -27,6 +27,9 @@
 		9B1D300E1F729E540086D056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1D300C1F729E540086D056 /* Main.storyboard */; };
 		9B1D30101F729E540086D056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1D300F1F729E540086D056 /* Assets.xcassets */; };
 		9B1D30131F729E540086D056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B1D30111F729E540086D056 /* LaunchScreen.storyboard */; };
+		9B4725B31F827CBC00505A85 /* applause.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B4725B01F827CBC00505A85 /* applause.mp3 */; };
+		9B4725B41F827CBC00505A85 /* loseCard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B4725B11F827CBC00505A85 /* loseCard.mp3 */; };
+		9B4725B51F827CBC00505A85 /* winCard.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B4725B21F827CBC00505A85 /* winCard.mp3 */; };
 		9BA12BC11F7D56A5004D12C4 /* Icon-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA12BA31F7D56A5004D12C4 /* Icon-16.png */; };
 		9BA12BC21F7D56A5004D12C4 /* Icon-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA12BA41F7D56A5004D12C4 /* Icon-20.png */; };
 		9BA12BC31F7D56A5004D12C4 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA12BA51F7D56A5004D12C4 /* Icon-29.png */; };
@@ -84,6 +87,9 @@
 		9B1D300F1F729E540086D056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B1D30121F729E540086D056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B1D30141F729E540086D056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B4725B01F827CBC00505A85 /* applause.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = applause.mp3; path = mp3/applause.mp3; sourceTree = "<group>"; };
+		9B4725B11F827CBC00505A85 /* loseCard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = loseCard.mp3; path = mp3/loseCard.mp3; sourceTree = "<group>"; };
+		9B4725B21F827CBC00505A85 /* winCard.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = winCard.mp3; path = mp3/winCard.mp3; sourceTree = "<group>"; };
 		9BA12BA31F7D56A5004D12C4 /* Icon-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-16.png"; path = "appiconmaker/Icon-16.png"; sourceTree = "<group>"; };
 		9BA12BA41F7D56A5004D12C4 /* Icon-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-20.png"; path = "appiconmaker/Icon-20.png"; sourceTree = "<group>"; };
 		9BA12BA51F7D56A5004D12C4 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-29.png"; path = "appiconmaker/Icon-29.png"; sourceTree = "<group>"; };
@@ -148,6 +154,7 @@
 		9B1D30071F729E540086D056 /* match2 */ = {
 			isa = PBXGroup;
 			children = (
+				9B4725AF1F827CAA00505A85 /* mp3 */,
 				9BA12BA21F7D5691004D12C4 /* Icon */,
 				9B1D301A1F729E940086D056 /* images */,
 				9B1D30081F729E540086D056 /* AppDelegate.swift */,
@@ -182,6 +189,16 @@
 				9B18983E1F76D96D003F499A /* wallpaper_01.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		9B4725AF1F827CAA00505A85 /* mp3 */ = {
+			isa = PBXGroup;
+			children = (
+				9B4725B01F827CBC00505A85 /* applause.mp3 */,
+				9B4725B11F827CBC00505A85 /* loseCard.mp3 */,
+				9B4725B21F827CBC00505A85 /* winCard.mp3 */,
+			);
+			name = mp3;
 			sourceTree = "<group>";
 		};
 		9BA12BA21F7D5691004D12C4 /* Icon */ = {
@@ -281,11 +298,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B1898411F76DE93003F499A /* button_play.png in Resources */,
+				9B4725B51F827CBC00505A85 /* winCard.mp3 in Resources */,
 				9BA12BDB1F7D56A6004D12C4 /* Icon-196.png in Resources */,
 				9BA12BC71F7D56A5004D12C4 /* Icon-50.png in Resources */,
 				9BA12BCC1F7D56A6004D12C4 /* Icon-64.png in Resources */,
 				9B1A4E8E1F7B07AE008E3750 /* castor.png in Resources */,
 				9BF203B11F7C5DCA00E0E485 /* trofeu.png in Resources */,
+				9B4725B41F827CBC00505A85 /* loseCard.mp3 in Resources */,
 				9BA12BC91F7D56A5004D12C4 /* Icon-57.png in Resources */,
 				9B1A4E801F7AFA62008E3750 /* reset_button.png in Resources */,
 				9BA12BD81F7D56A6004D12C4 /* Icon-167.png in Resources */,
@@ -297,6 +316,7 @@
 				9BA12BC31F7D56A5004D12C4 /* Icon-29.png in Resources */,
 				9BA12BDE1F7D56A6004D12C4 /* Icon-1024.png in Resources */,
 				9BA12BD31F7D56A6004D12C4 /* Icon-114.png in Resources */,
+				9B4725B31F827CBC00505A85 /* applause.mp3 in Resources */,
 				9BA12BC51F7D56A5004D12C4 /* Icon-40.png in Resources */,
 				9BF203AF1F7C57CD00E0E485 /* wallpaper_02.png in Resources */,
 				9BA12BC21F7D56A5004D12C4 /* Icon-20.png in Resources */,
